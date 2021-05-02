@@ -6,14 +6,12 @@
 }
 
 .mcp-nav__items {
-    max-width: 1000px;
+    max-width: 1050px;
     height: 100%;
     margin: 0 auto;
     padding: 0 16px;
     display: flex;
     align-items: center;
-
-
 }
 
 .mcp-nav__item {
@@ -26,11 +24,15 @@
 
 .mcp-nav__link {
     color: $perfume;
-    font-size: 16px;
+    font-size: 18px;
 
     &:hover,
     &:focus {
         color: $magnolia;
+    }
+
+    @media (max-width: 550px) {
+        font-size: 16px;
     }
 
     &--inactive {
