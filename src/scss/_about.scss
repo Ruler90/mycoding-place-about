@@ -1,0 +1,37 @@
+@use './variables'as *;
+
+.mcp-about {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 32px 64px;
+    color: $magnolia;
+    line-height: 1.5;
+
+    @media (max-width: 800px) {
+        padding: 0 16px 32px;
+    }
+}
+
+.mcp-about__text {
+    font-size: 24px;
+    margin-bottom: 32px;
+
+    @media (max-width: 980px) {
+        font-size: 22px;
+    }
+
+    @media (max-width: 800px) {
+        max-width: initial;
+        font-size: 18px;
+    }
+
+    &--subheader {
+        color: $perfume;
+        margin-bottom: 0;
+    }
+
+    &--list {
+        margin-top: 0;
+        padding-inline-start: 44px;
+    }
+}
