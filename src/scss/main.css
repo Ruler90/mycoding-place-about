@@ -253,19 +253,26 @@ footer {
 }
 
 .mcp-nav__items {
-  max-width: 1050px;
+  max-width: 1200px;
   height: 100%;
   margin: 0 auto;
   padding: 0 16px;
   display: flex;
   align-items: center;
 }
+@media (max-width: 450px) {
+  .mcp-nav__items {
+    justify-content: space-evenly;
+  }
+}
 
 .mcp-nav__item {
   margin: 0 16px;
 }
-.mcp-nav__item:last-child {
-  margin-left: auto;
+@media (min-width: 451px) {
+  .mcp-nav__item:last-child {
+    margin-left: auto;
+  }
 }
 
 .mcp-nav__link {
